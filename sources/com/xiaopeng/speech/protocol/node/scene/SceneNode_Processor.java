@@ -1,0 +1,92 @@
+package com.xiaopeng.speech.protocol.node.scene;
+
+import com.xiaopeng.speech.annotation.ICommandProcessor;
+import com.xiaopeng.speech.protocol.event.VuiEvent;
+/* loaded from: classes.dex */
+public class SceneNode_Processor implements ICommandProcessor {
+    private SceneNode mTarget;
+
+    public SceneNode_Processor(SceneNode target) {
+        this.mTarget = target;
+    }
+
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    @Override // com.xiaopeng.speech.annotation.ICommandProcessor
+    public void performCommand(String event, String data) {
+        char c;
+        switch (event.hashCode()) {
+            case -1722601438:
+                if (event.equals(VuiEvent.SCENE_VUI_DISABLE)) {
+                    c = 4;
+                    break;
+                }
+                c = 65535;
+                break;
+            case -1546876663:
+                if (event.equals(VuiEvent.SCENE_VUI_ENABLE)) {
+                    c = 3;
+                    break;
+                }
+                c = 65535;
+                break;
+            case 720644575:
+                if (event.equals(VuiEvent.SCENE_DM_START)) {
+                    c = 1;
+                    break;
+                }
+                c = 65535;
+                break;
+            case 828241388:
+                if (event.equals(VuiEvent.SCENE_CONTROL)) {
+                    c = 0;
+                    break;
+                }
+                c = 65535;
+                break;
+            case 1045003449:
+                if (event.equals(VuiEvent.SCENE_REBUILD)) {
+                    c = 5;
+                    break;
+                }
+                c = 65535;
+                break;
+            case 1301293464:
+                if (event.equals(VuiEvent.SCENE_DM_END)) {
+                    c = 2;
+                    break;
+                }
+                c = 65535;
+                break;
+            default:
+                c = 65535;
+                break;
+        }
+        switch (c) {
+            case 0:
+                this.mTarget.onSceneEvent(event, data);
+                return;
+            case 1:
+                this.mTarget.onDMStart(event, data);
+                return;
+            case 2:
+                this.mTarget.onDMEnd(event, data);
+                return;
+            case 3:
+                this.mTarget.onVuiEnable(event, data);
+                return;
+            case 4:
+                this.mTarget.onVuiDisable(event, data);
+                return;
+            case 5:
+                this.mTarget.onRebuild(event, data);
+                return;
+            default:
+                return;
+        }
+    }
+
+    @Override // com.xiaopeng.speech.annotation.ICommandProcessor
+    public String[] getSubscribeEvents() {
+        return new String[]{VuiEvent.SCENE_CONTROL, VuiEvent.SCENE_DM_START, VuiEvent.SCENE_DM_END, VuiEvent.SCENE_VUI_ENABLE, VuiEvent.SCENE_VUI_DISABLE, VuiEvent.SCENE_REBUILD};
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="256dp" android:layout_height="150dp">
+    <ImageView android:id="@+id/item_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8dp" android:scaleType="center"/>
+    <TextView android:textSize="@dimen/x_font_body_03_size" android:textColor="@android:color/white" android:layout_gravity="start|bottom" android:id="@+id/item_duration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:layout_marginStart="16dp"/>
+    <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center" android:id="@+id/item_play" android:visibility="gone" android:layout_width="64dp" android:layout_height="64dp" android:layout_margin="8dp" android:src="@drawable/ic_large_play"/>
+    <View android:layout_gravity="center" android:id="@+id/item_select_mask" android:background="@drawable/ic_camera_img_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8dp"/>
+    <ImageView android:layout_gravity="end|bottom" android:id="@+id/item_select" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginBottom="20dp" android:src="@drawable/ic_list_selected" android:layout_marginEnd="20dp"/>
+    <View android:layout_gravity="start|top" android:id="@+id/item_lock_bg" android:background="@drawable/bg_collision_item_view" android:layout_width="match_parent" android:layout_height="60dp" android:layout_margin="8dp"/>
+    <com.xiaopeng.xui.widget.XImageView android:layout_gravity="end|top" android:id="@+id/item_read_flag" android:visibility="gone" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/ic_collision_upload" android:layout_marginEnd="4dp"/>
+    <com.xiaopeng.xui.widget.XImageView android:layout_gravity="end|bottom" android:id="@+id/item_dvr_lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:src="@drawable/ic_dvr_lock" android:layout_marginEnd="16dp"/>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XTextView android:textSize="26px" android:textColor="@color/x_theme_text_01" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:text="@string/file_delete_wait_d21"/>
+    <com.xiaopeng.xui.widget.XLoading android:id="@+id/x_loading_dialog_loading" android:layout_marginTop="89dp" style="@style/XLoading.Large"/>
+</LinearLayout>

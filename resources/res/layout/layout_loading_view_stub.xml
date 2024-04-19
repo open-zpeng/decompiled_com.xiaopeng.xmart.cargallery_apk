@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XButton xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/x_font_title_04_size" android:textColor="@color/x_btn_ghost_color_selector" android:id="@+id/btn_load" android:background="@drawable/x_btn_ghost_large_positive_selector" android:visibility="gone" android:layout_width="216dp" android:layout_height="66dp" android:layout_marginTop="52dp" android:text="@string/btn_retry" style="@style/XButton.Ghost"/>

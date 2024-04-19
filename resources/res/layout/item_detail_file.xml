@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fl_root_view" android:layout_width="160dp" android:layout_height="160dp" android:layout_margin="4dp">
+    <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center" android:id="@+id/item_detail_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/item_detail_thumbnail_cover" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center" android:id="@+id/item_detail_play" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ic_large_play"/>
+</FrameLayout>

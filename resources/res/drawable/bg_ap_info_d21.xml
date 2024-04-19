@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <size android:height="480dp" android:width="900dp"/>
+    <gradient android:startColor="@color/file_transfer_bg_ap_info_end" android:endColor="@color/file_transfer_bg_ap_info_start" android:angle="180"/>
+    <corners android:radius="50dp"/>
+</shape>

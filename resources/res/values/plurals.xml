@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="album_text_select_size">
+        <item quantity="one">已选中%1$s项，共%2$s</item>
+        <item quantity="other">已选中%1$s项，共%2$s</item>
+    </plurals>
+    <plurals name="dlg_delete_file_title">
+        <item quantity="one">删除文件</item>
+        <item quantity="other">删除文件</item>
+    </plurals>
+    <plurals name="toast_item_deleted">
+        <item quantity="one">文件已删除！</item>
+        <item quantity="other">文件已删除！</item>
+    </plurals>
+    <plurals name="transfer_connect_client_number">
+        <item quantity="one">已连接 %1$d台设备</item>
+        <item quantity="other">已连接 %1$d台设备</item>
+    </plurals>
+    <plurals name="transfer_file_title">
+        <item quantity="one">待发送%1$d个文件，共%2$s</item>
+        <item quantity="other">待发送%1$d个文件，共%2$s</item>
+    </plurals>
+</resources>

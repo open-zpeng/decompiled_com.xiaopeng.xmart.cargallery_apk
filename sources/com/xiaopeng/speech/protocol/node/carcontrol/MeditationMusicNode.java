@@ -1,0 +1,45 @@
+package com.xiaopeng.speech.protocol.node.carcontrol;
+
+import com.xiaopeng.speech.SpeechNode;
+/* loaded from: classes.dex */
+public class MeditationMusicNode extends SpeechNode<MeditationMusicListener> {
+    /* JADX INFO: Access modifiers changed from: protected */
+    public void onPrev(String event, String data) {
+        Object[] listenerList = this.mListenerList.collectCallbacks();
+        if (listenerList != null) {
+            for (Object obj : listenerList) {
+                ((MeditationMusicListener) obj).onPrev();
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public void onNext(String event, String data) {
+        Object[] listenerList = this.mListenerList.collectCallbacks();
+        if (listenerList != null) {
+            for (Object obj : listenerList) {
+                ((MeditationMusicListener) obj).onNext();
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public void onPause(String event, String data) {
+        Object[] listenerList = this.mListenerList.collectCallbacks();
+        if (listenerList != null) {
+            for (Object obj : listenerList) {
+                ((MeditationMusicListener) obj).onPause();
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    public void onResume(String event, String data) {
+        Object[] listenerList = this.mListenerList.collectCallbacks();
+        if (listenerList != null) {
+            for (Object obj : listenerList) {
+                ((MeditationMusicListener) obj).onResume();
+            }
+        }
+    }
+}

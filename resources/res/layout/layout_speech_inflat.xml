@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="@dimen/speech_width" android:layout_height="@dimen/speech_height">
+    <com.xiaopeng.xui.widget.XImageView android:background="@drawable/bg_speech_input_prepare" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center" android:id="@+id/iv_speech_prepare" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_large_voice_green" android:scaleType="center"/>
+    <com.xiaopeng.xmart.cargallery.widget.SpeechInputView android:id="@+id/siv_input" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.xiaopeng.xui.widget.XLoading android:layout_gravity="center" android:id="@+id/xl_speech_loading" android:visibility="gone" style="@style/XLoading.Large"/>
+</FrameLayout>

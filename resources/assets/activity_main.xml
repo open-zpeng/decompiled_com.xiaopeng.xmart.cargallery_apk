@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+    <view id="app_container" attr="background" value="@drawable/x_bg_app"/>
+    <view id="xbt_bottom" attr="background" value="@drawable/bj_occlusion"/>
+</theme>

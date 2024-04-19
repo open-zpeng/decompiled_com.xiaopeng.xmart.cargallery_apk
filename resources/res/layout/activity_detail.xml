@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_container" android:background="@drawable/x_bg_app" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xmart.cargallery.view.GalleryDetailTopView android:id="@+id/detail_top_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <com.xiaopeng.xmart.cargallery.view.GalleryViewPager android:id="@+id/view_pager_detail" android:layout_width="match_parent" android:layout_height="608dp" android:layout_marginTop="120dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_detail_media_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/view_pager_detail"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginTop="60dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/rv_detail_media_list">
+        <com.xiaopeng.xui.widget.XTextView android:id="@+id/tv_detail_location" android:visibility="gone" style="@style/XText.Detail"/>
+        <com.xiaopeng.xui.widget.XTextView android:id="@+id/tv_detail_duration" style="@style/XText.Detail"/>
+        <com.xiaopeng.xui.widget.XTextView android:id="@+id/tv_detail_file_size" style="@style/XText.Detail"/>
+        <com.xiaopeng.xui.widget.XTextView android:id="@+id/tv_detail_taken_date" style="@style/XText.Detail"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

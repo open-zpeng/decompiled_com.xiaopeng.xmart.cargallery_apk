@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XListTwo xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/xlt_connect" android:layout_width="900dp" app:list_two_left="@layout/list_connect_left_icon" app:list_two_text_sub="@string/connect_xlist" style="@style/XList.Two"/>
